@@ -9,10 +9,13 @@
 
   --primaryBackgroundColor: #fff;
   --secondaryBackgroundColor: #fbfbfb;
-  --thirdBackgroundColor: #f5f3fe;
+  /* --thirdBackgroundColor: #f5f3fe; */
+  --thirdBackgroundColor: #d8e2ff;
 
-  --primaryIconColor: #7e74f1;
-  --primaryIconColorHover: #5d51e8;
+  /* --primaryIconColor: #7e74f1; */
+  --primaryIconColor: #486cdc;
+  /* --primaryIconColorHover: #5d51e8; */
+  --primaryIconColorHover: #0241fc;
 
   --sectionPadding: 6rem 0;
 
@@ -114,7 +117,8 @@ a {
 /* Layout */
 .grid-3 {
   display: grid;
-  grid-template-columns: repeat(auto-fit, ninmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 3rem;
 }
 
 /* logo and navigation-menu */
@@ -208,4 +212,34 @@ nav ul li a {
 
 .services-title {
   text-align: center;
+}
+
+.service {
+  padding: 3rem 2rem;
+  text-align: center;
+  background: var(--primaryBackgroundColor);
+  border-radius: var(--itemBorderRadius);
+}
+
+.service h4 {
+  margin: 1.5rem;
+  font-weight: 500;
+  font-size: 1.05rem;
+}
+
+.service-icon {
+  background: var(--thirdBackgroundColor);
+  width: fit-content;
+  margin: 0 auto;
+  padding: 1rem 1.3rem;
+  border-radius: 0.5rem;
+}
+
+.service-icon svg {
+  fill: var(--primaryIconColor);
+}
+
+/* Portfolio Section */
+#portfolios {
+  padding: var(--sectionPadding);
 }
