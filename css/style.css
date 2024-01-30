@@ -312,7 +312,7 @@ nav ul li a {
 
 .education {
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .education .line {
@@ -382,7 +382,7 @@ nav ul li a {
   resize: none;
 }
 
-.contact-form input::placehorder,
+.contact-form input::placeholder,
 .contact-form textarea::placeholder {
   color: #9d9fa1;
 }
@@ -405,9 +405,10 @@ nav ul li a {
 }
 
 .btn-submit:hover {
-  background: var(--primaryIconColorHover);
+  background-color: var(--primaryIconColorHover);
 }
 
+/* Contact Section - Right Side */
 .contact-item {
   display: flex;
   gap: 1.5rem;
